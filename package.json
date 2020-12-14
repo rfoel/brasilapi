@@ -1,6 +1,6 @@
 {
   "name": "brasilapi",
-  "version": "0.0.1-dev.0",
+  "version": "1.0.0",
   "description": "Vamos transformar o Brasil em uma API?",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
