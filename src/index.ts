@@ -11,8 +11,8 @@ export class BrasilAPI {
   }
 
   async banks(): Promise<Bank[]>
-  async banks(code: string): Promise<Bank>
-  async banks(code?: string): Promise<Bank[] | Bank> {
+  async banks(code: string | number): Promise<Bank>
+  async banks(code?: string | number): Promise<Bank[] | Bank> {
     if (code) {
       return await this.request.makeApiRequest<Bank>(`banks/v1/${code}`)
     }
