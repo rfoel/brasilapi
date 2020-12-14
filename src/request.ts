@@ -5,8 +5,6 @@ import { BrasilAPIError } from './error'
 export class Request {
   request: any
 
-  constructor() {}
-
   public async makeApiRequest<Response>(uri: string): Promise<Response> {
     try {
       const response = await fetch(`https://brasilapi.com.br/api/${uri}`)
